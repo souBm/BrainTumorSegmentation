@@ -16,7 +16,7 @@ if __name__ == "__main__":
     images = []
     masks = []
 
-    # Load images
+    # Load test images
     image_folder = 'DATA/test-images'
     for each_image in os.listdir(image_folder):
         if each_image.endswith('.png'):
@@ -28,7 +28,7 @@ if __name__ == "__main__":
             else:
                 print(f"Failed to load image: {image_path}")
 
-    # Load masks
+    # Load mask images 
     mask_folder = 'DATA/output_masks'
     for each_mask in os.listdir(mask_folder):
         if each_mask.endswith('.png'):
